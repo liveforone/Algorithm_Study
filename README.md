@@ -1,2 +1,4 @@
 # Algorithm_Study
-알고리즘 Test 정리
+
+## 메뉴
+* basic : 응용하기 좋은 공식
