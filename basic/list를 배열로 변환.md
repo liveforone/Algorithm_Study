@@ -5,6 +5,7 @@
 * 결론 : 인자로 넘어가는 배열의 사이즈가 0이라서 원래 배열의 크기만큼 생성된다.
 ```java
 import java.util.*;
+List<String> stringList = new ArrayList<String>();
 String[] answer = new String[str.length];
 answer = stringList.toArray(new String[0]);
 ```
