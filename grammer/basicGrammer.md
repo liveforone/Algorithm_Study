@@ -90,6 +90,10 @@ List<Integer> list = new ArrayList<>(Arrays.asList(arr));
 //Integer list -> int array
 List<Integer> list = new ArrayList<>();
 int[] arr = list.stream().mapToInt(x -> x).toArray();
+
+//배열에서 max/min
+Arrays.stream(arr).max().getAsInt();
+Arrays.stream(arr).min().getAsInt();
 ```
 
 ## stack
