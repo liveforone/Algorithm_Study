@@ -12,6 +12,14 @@ Arrays.stream(arr).max().getAsInt();
 Arrays.stream(arr).min().getAsInt();
 ```
 
+## 배열 초기화
+* `Arrays.asList()`로 리스트를 초기화 할경우 `static` 리스트가 만들어져서 수정 삭제시 에러가 발생한다.
+* 따라서 `new ArrayList<>(Arrays.asList(val1, val2...))` 로 초기화 하는것이 좋다.
+
+## 정수 리스트 값 삭제
+* 정수 list가 존재할때 이 리스트에서 특정 값을 삭제할경우에는 `arr.remove()`가 아니라
+* `arr.remove(Integer.valueOf(num))`을 사용해야한다.
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
