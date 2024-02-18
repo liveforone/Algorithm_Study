@@ -12,7 +12,7 @@ Arrays.stream(arr).max().getAsInt();
 Arrays.stream(arr).min().getAsInt();
 ```
 
-## 배열 초기화
+## 리스트 초기화
 * `Arrays.asList()`로 리스트를 초기화 할경우 `static` 리스트가 만들어져서 수정 삭제시 에러가 발생한다.
 * 따라서 `new ArrayList<>(Arrays.asList(val1, val2...))` 로 초기화 하는것이 좋다.
 
