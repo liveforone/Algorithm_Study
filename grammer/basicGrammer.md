@@ -1,5 +1,17 @@
 # Grammer
 
+## stream
+```java
+//int 배열의 경우
+//검사해야할것이 있다면 == if문 사용이 필요시 -> filter사용
+//오름차순 정렬을 해야한다면 sorted 사용
+int[] result = Arrays.stream(arr).filter().sorted().toArray();
+
+//배열에서 max/min
+Arrays.stream(arr).max().getAsInt();
+Arrays.stream(arr).min().getAsInt();
+```
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
