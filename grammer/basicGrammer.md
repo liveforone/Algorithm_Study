@@ -24,7 +24,8 @@ Arrays.stream(arr).min().getAsInt();
 * `import java.util.*;`만으로는 Collectors를 사용할 수 없다.
 * `import java.util.stream.Collectors;`로 정적 임포트를 해주어야한다.
 
-## int 배열을 list로 변환
+## 기본타입 배열을 list로 변환
+* 기본타입 : boolean, char, byte, short, int, long, float, double은 아래와 같이 해야한다.
 ```java
 import java.util.*;
 import java.util.stream.Collectors;
@@ -41,7 +42,7 @@ List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList(
 
 ## 리스트를 배열로 변환
 * 원하는 타입을 사용하여 toArray안에 생성자 참조를 이용하면 된다.
-* int는 안된다.
+* 기본타입은 안된다.
 ```java
 list.toArray(type[]::new); 
 ```
