@@ -1,5 +1,11 @@
 # Grammer
 
+## 기본타입
+* boolean, short, byte, int, long, float, double, char
+* null이 아닌 기본값을 가짐
+* 스택에 저장됨
+* 실제 값을 가짐
+
 ## stream
 ```java
 //int 배열의 경우
