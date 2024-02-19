@@ -41,6 +41,7 @@ List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList(
 
 ## 리스트를 배열로 변환
 * 원하는 타입을 사용하여 toArray안에 생성자 참조를 이용하면 된다.
+* int는 안된다.
 ```java
 list.toArray(type[]::new); 
 ```
