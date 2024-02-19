@@ -35,6 +35,10 @@ List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList(
 * boxed는 primitive 타입을 해당하는 래퍼 클래스로 박싱하는데 사용된다.
 * 배열을 list로 변경시 래퍼 타입을 사용하므로 boxed() 함수를 사용해야한다.
 
+## 배열 정렬
+* 배열은 `Arrays.sort()`를 사용하여 정렬하나, 이는 정렬이 순차적으로 실행된다.
+* `Arrays.parallelSort()`를 사용하면 병렬적으로 정렬할 수 있다.
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
