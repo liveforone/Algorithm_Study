@@ -20,6 +20,21 @@ Arrays.stream(arr).min().getAsInt();
 * 정수 list가 존재할때 이 리스트에서 특정 값을 삭제할경우에는 `arr.remove()`가 아니라
 * `arr.remove(Integer.valueOf(num))`을 사용해야한다.
 
+## collectors 사용시 주의
+* `import java.util.*;`만으로는 Collectors를 사용할 수 없다.
+* `import java.util.stream.Collectors;`로 정적 임포트를 해주어야한다.
+
+## int 배열을 list로 변환
+```java
+import java.util.*;
+import java.util.stream.Collectors;
+List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList());
+```
+
+## boxed() -> primitive 타입을 래퍼 클래스로 박싱
+* boxed는 primitive 타입을 해당하는 래퍼 클래스로 박싱하는데 사용된다.
+* 배열을 list로 변경시 래퍼 타입을 사용하므로 boxed() 함수를 사용해야한다.
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
