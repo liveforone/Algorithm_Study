@@ -39,6 +39,12 @@ List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList(
 * 배열은 `Arrays.sort()`를 사용하여 정렬하나, 이는 정렬이 순차적으로 실행된다.
 * `Arrays.parallelSort()`를 사용하면 병렬적으로 정렬할 수 있다.
 
+## 리스트를 배열로 변환
+* 원하는 타입을 사용하여 toArray안에 생성자 참조를 이용하면 된다.
+```java
+list.toArray(type[]::new); 
+```
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
