@@ -91,6 +91,8 @@ replace(char1, char2) //char1을 char2로 변경
 equals()
 compareTo(str)  //str보다 앞이면 -1, 같으면 0, 뒤면 1
 contains(str)  //str이 포함되는지
+stripLeading() //문자열 앞 공백제거
+stripTrailing() //문자열 뒤 공백제거
 ```
 
 ## StringBuilder
