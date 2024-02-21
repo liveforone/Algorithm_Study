@@ -31,6 +31,31 @@ if ( num % 1 > 0 ) {
 }
 ```
 
+## 유클리드 호제를 활용한 최대공약수 / 최소 공배수
+```java
+//최대 공약수
+static int gbc(int a, int b) {
+  //유클리드 호제는 a>b인 상황에서만 가능하다.
+  //따라서 a<b인 경우 a와 b를 바꾸어줘야한다.
+  if (a < b) {
+    int tmp = a;
+    a = b;
+    b = tmp;
+  }
+  while(b != 0) {
+    int r = a%b;
+    a = b;
+    b = r;
+  }
+  return a;
+}
+
+//최소 공배수 -> 최대 공약수 공식을 활용하여 계산한다.
+static int lcm(int a, int b) {
+  return a*b / gbc(a, b);
+}
+```
+
 ## steam().map
 ```java
 stream.mapToInt(i->i).toArray();
