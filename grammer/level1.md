@@ -56,6 +56,27 @@ static int lcm(int a, int b) {
 }
 ```
 
+## 문자열에 숫자만 있는지 판별하기
+```java
+import java.util.regex.Pattern; //정적 임포트
+String pattern = "\\d+"; //숫자를 의미
+Pattern.matches(pattern, str) //bool 리턴
+```
+
+## 이중배열의 생성
+```java
+int[][] param // 주어질때
+int[][] arr = new int[param.length][param[0].length];
+```
+
+## 이중 배열의 반복문
+```java
+for (int i=0; i<arr.length; i++) {
+	for (int j=0; j<arr[i].length; j++) {
+	}
+}
+```
+
 ## steam().map
 ```java
 stream.mapToInt(i->i).toArray();
