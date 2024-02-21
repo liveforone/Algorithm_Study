@@ -53,6 +53,10 @@ List<Integer> sortedList = Arrays.stream(arr).boxed().collect(Collectors.toList(
 list.toArray(type[]::new); 
 ```
 
+## char to string
+1. `String.valueOf(char)` 이 코드는 int도 string으로 바꿔주는 대표적인 코드이다.
+2. `Character.toString(char)`
+
 ## 입력
 * 한 줄씩 입력받는경우 BufferedReader를 쓰는것이 좋다.
 ```java
