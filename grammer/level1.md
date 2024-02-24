@@ -77,6 +77,18 @@ for (int i=0; i<arr.length; i++) {
 }
 ```
 
+## n만큼 알파벳 밀기
+```java
+for (int i=0; i<str.length(); i++) {
+	char ch = str.charAt(i)
+	if (Character.isLowerCase(ch)) {
+		ch = (char) ((ch - 'a' + n) % 26 + 'a');
+	} else if (Character.isUpperCase(ch)) {
+		ch = (char) ((ch - 'A' + n) % 26 + 'A');
+	}
+}
+```
+
 ## steam().map
 ```java
 stream.mapToInt(i->i).toArray();
